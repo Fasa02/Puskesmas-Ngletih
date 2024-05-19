@@ -43,7 +43,7 @@ body {
 }
 
 .banner-text {
-	margin-top: 14%;
+	margin-top: 10%;
     margin-left: 10%;
 }
 
@@ -86,6 +86,10 @@ h6 {
 }
 .black {
 	color:#000000;
+}
+
+.green{
+    color: #4d7830;
 }
 
 
@@ -279,6 +283,10 @@ header.sticky .navigation li a:hover {
     padding-bottom: 10%;
 }
 
+#inovasi{
+    background: #abcc92;
+}
+
 #fitur{
     background: #F0F3F2;
 }
@@ -297,7 +305,7 @@ h1 {
 
 .links {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     margin: 20px 0;
 }
@@ -328,6 +336,91 @@ h1 {
 
 .tombol p {
     font-size: 16px;
+}
+
+.tombols {
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 30px;
+    width: 300px;
+    text-align: center;
+    transition: 0.3s;
+    background-color: #4d78306b;
+}
+
+.tombols:hover {
+    background-color: #ddd;
+}
+
+.tombols img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 2%;
+    margin-top: 5%;
+}
+
+.tombols p {
+    font-size: 16px;
+}
+
+.tombolss {
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #4d7830;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    transition: 0.3s;
+    background-color: #dddddd6b;
+}
+
+.tombolss:hover {
+    background-color: #ddd;
+}
+
+.tombolss img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 2%;
+    margin-top: 5%;
+}
+
+.tombolss p {
+    font-size: 16px;
+}
+
+.tombolsss {
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #4d7830;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    transition: 0.3s;
+    background-color: #dddddd6b;
+}
+
+.tombolsss:hover {
+    background-color: #ddd;
+}
+
+.tombolsss img {
+    width: 100px;
+    height: 80px;
+    margin-bottom: 2%;
+    margin-top: 5%;
+}
+
+.tombolsss p {
+    font-size: 16px;
+}
+
+#pengaduan{
+    background-color: #abcc92;
 }
 
 @media screen and (max-width: 1750px) {
@@ -761,5 +854,86 @@ h1 {
     .tombol p {
         font-size: 16px;
     }
+
+    .tombols {
+        text-decoration: none;
+        color: #000;
+        margin: 10px;
+        margin-top: 12px;
+        padding: 20px;
+        border: 2px solid #111;
+        border-radius: 30px;
+        width: 250px;
+        text-align: center;
+        transition: 0.3s;
+    }
     
+    .tombols:hover {
+        background-color: #ddd;
+    }
+    
+    .tombols img {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 10px;
+    }
+    
+    .tombols p {
+        font-size: 16px;
+    }
+    
+    .tombolss {
+        text-decoration: none;
+        color: #000;
+        margin: 10px;
+        margin-top: 12px;
+        padding: 20px;
+        border: 2px solid #111;
+        border-radius: 30px;
+        width: 250px;
+        text-align: center;
+        transition: 0.3s;
+    }
+    
+    .tombolss:hover {
+        background-color: #ddd;
+    }
+    
+    .tombolss img {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 10px;
+    }
+    
+    .tombolss p {
+        font-size: 16px;
+    }
+
+    .tombolsss {
+        text-decoration: none;
+        color: #000;
+        margin: 10px;
+        margin-top: 12px;
+        padding: 20px;
+        border: 2px solid #111;
+        border-radius: 30px;
+        width: 250px;
+        text-align: center;
+        transition: 0.3s;
+    }
+    
+    .tombolsss:hover {
+        background-color: #ddd;
+    }
+    
+    .tombolsss img {
+        width: 100px;
+        height: 80px;
+        margin-bottom: 10px;
+    }
+    
+    .tombolsss p {
+        font-size: 16px;
+    }
 }
+
