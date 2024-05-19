@@ -50,6 +50,7 @@ body {
 .banner-text p {
 	margin: 4% 0%;
     font-size: 1.1em;
+    margin-top: -2%;
 }
 .banner-text ul {
 	list-style: none;
