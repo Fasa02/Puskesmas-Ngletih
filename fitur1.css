@@ -166,17 +166,16 @@ header.sticky .navigation li a:hover {
 
 .safe{
     position: relative;
-    display: flex;
-    width: 50%;
+    display: flexbox;
     margin: 0% 25%;
 }
+
 
 .titlemake{
     position: relative;
     display: block;
-    width: 50%;
     text-align: center;
-    margin: 0% 25%;
+    margin: 0% 15%;
     padding-top: 3%;
 }
 
@@ -670,7 +669,7 @@ h1 {
         display: block;
         width: 100%;
         text-align: center;
-        margin: 10% 0% 0% 0%;
+        margin: 0% 0% 0% 0%;
     }
     
     .titlemake .mksf{
