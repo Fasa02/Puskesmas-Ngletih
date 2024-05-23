@@ -184,6 +184,7 @@ header.sticky .navigation li a:hover {
     box-shadow: 2px 2px 7px 1px rgba(0, 0, 0, 0.6);
   }
   
+
   /* Next & previous buttons */
   .prev, .next {
     cursor: pointer;
@@ -221,11 +222,11 @@ header.sticky .navigation li a:hover {
   
   /* Fading animation */
   .fade {
-    animation-name: fade;
-    animation-duration: 3s;
+    animation-name: slide;
+    animation-duration: 4.5s;
   }
 
-  @keyframes fade {
+  @keyframes slide {
     from {
         opacity: 0.1;
         transform: translateX(-100%);
@@ -238,7 +239,7 @@ header.sticky .navigation li a:hover {
 
 .slide-out {
     animation-name: slide-out;
-    animation-duration: 2s;
+    animation-duration: 4.5s;
     animation-fill-mode: forwards;
 }
 
@@ -446,6 +447,75 @@ h1 {
 
 #pengaduan{
     background-color: #abcc92;
+}
+
+#galeri{
+    background-color: #F0F3F2;
+}
+
+.slider{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    padding: 5% 25%;
+}
+.slider img{
+    width: 100%;
+    display: none;
+}
+
+img.displaySlide{
+    display: block;
+    animation-name: fade;
+    animation-duration: 10s;
+}
+
+
+.slider button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    padding: 10px 15px;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.prev{
+    left: 27.5%;
+}
+.next{
+    right: 28%;
+}
+
+@keyframes fade {
+    from {
+        opacity: 1;
+        transform: translateX(-150%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(150%);
+    }
+}
+
+.slide-outt {
+    animation-name: slide-out;
+    animation-duration: 4.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-out {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0.0;
+        transform: translateX(100%);
+    }
 }
 
 @media screen and (max-width: 1750px) {
@@ -959,6 +1029,40 @@ h1 {
     
     .tombolsss p {
         font-size: 16px;
+    }
+
+    .slider{
+        position: relative;
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+        padding: 0%;
+    }
+    .slider img{
+        width: 100%;
+        display: none;
+    }
+    img.displaySlide{
+        display: block;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+    .slider button{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 0.8rem;
+        padding: 10px 15px;
+        background-color: hsla(0, 0%, 0%, 0.5);
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    .prev{
+        left: 5%;
+    }
+    .next{
+        right: 5%;
     }
 }
 
