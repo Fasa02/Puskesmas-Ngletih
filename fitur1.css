@@ -271,16 +271,14 @@ h1 {
     text-decoration: none;
     margin: 10px;
     padding: 10px;
-    border: 2px solid #ddd;
     border-radius: 30px;
     width: 300px;
     text-align: center;
     transition: 0.3s;
-    background-color: #4d78306b;
 }
 
 .tombols:hover {
-    background-color: #ddd;
+    background-color: #dddddd77;
 }
 
 .tombols img {
@@ -294,59 +292,6 @@ h1 {
     font-size: 16px;
 }
 
-.tombolss {
-    text-decoration: none;
-    margin: 10px;
-    padding: 10px;
-    border: 2px solid #4d7830;
-    border-radius: 10px;
-    width: 300px;
-    text-align: center;
-    transition: 0.3s;
-    background-color: #dddddd6b;
-}
-
-.tombolss:hover {
-    background-color: #ddd;
-}
-
-.tombolss img {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 2%;
-    margin-top: 5%;
-}
-
-.tombolss p {
-    font-size: 16px;
-}
-
-.tombolsss {
-    text-decoration: none;
-    margin: 10px;
-    padding: 10px;
-    border: 2px solid #4d7830;
-    border-radius: 10px;
-    width: 300px;
-    text-align: center;
-    transition: 0.3s;
-    background-color: #dddddd6b;
-}
-
-.tombolsss:hover {
-    background-color: #ddd;
-}
-
-.tombolsss img {
-    width: 100px;
-    height: 80px;
-    margin-bottom: 2%;
-    margin-top: 5%;
-}
-
-.tombolsss p {
-    font-size: 16px;
-}
 
 #pengaduan{
     background-color: #abcc92;
@@ -429,6 +374,138 @@ img.displaySlide{
         justify-content: center;
         margin: 20px 0;
     }
+}
+
+footer {
+    bottom: 0;
+}
+
+.footer {
+    background-color: #4d7830;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+}
+
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+.footer .footer-left {
+    width: 30%;
+}
+
+.footer h3 {
+    color: #f5f5f5;
+    margin: 0;
+    padding-bottom: 20px;
+    font-family: Georgia, 'Time New Roman', Times, serif;
+}
+
+.footer .footer-left img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.footer .footer-left .credit-cards {
+    width: 100%;
+}
+
+.footer .footer-copyright {
+    color: #f0f3f2b0;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+    padding-top: 10%;
+}
+
+.footer .footer-center {
+    width: 35%;
+}
+
+.footer .footer-center i {
+    color: #F0F3F2;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer .footer-center p {
+    display: inline-block;
+    color: #F0F3F2;
+    vertical-align: middle;
+    margin: 0px;
+}
+
+.footer .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer .footer-center p a {
+    color: #F0F3F2;
+    text-decoration: none;
+}
+
+.footer .footer-right {
+    width: 30%;
+}
+
+.footer .footer-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0px;
+}
+
+.footer .footer-about span {
+    display: block;
+    color: #F0F3F2;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer .footer-media {
+    margin-top: 25px;
+}
+
+.footer .footer-media a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-color: #abcc92;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+    line-height: 50px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+.footer .footer-media a:hover {
+    background-color: #8f9296;
 }
 
 
@@ -586,6 +663,28 @@ img.displaySlide{
         display: block;
         width: 100%;
         margin: 0% 0% 0% 0%;
+    }
+
+    .footer .footer-left,
+    .footer .footer-center,
+    .footer .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: left;
+    }
+
+    .footer .footer-center i {
+        margin-left: 0px;
+    }
+
+    .footer .footer-left img {
+        width: 70%;
+        vertical-align: middle;
+    }
+
+    footer {
+        position: static;
     }
 }
 
@@ -794,8 +893,7 @@ img.displaySlide{
         color: #000;
         margin: 10px;
         margin-top: 12px;
-        padding: 20px;
-        border: 2px solid #111;
+        padding: 10px;
         border-radius: 30px;
         width: 250px;
         text-align: center;
@@ -803,7 +901,7 @@ img.displaySlide{
     }
     
     .tombols:hover {
-        background-color: #ddd;
+        background-color: #ddddddab;
     }
     
     .tombols img {
@@ -816,59 +914,6 @@ img.displaySlide{
         font-size: 16px;
     }
     
-    .tombolss {
-        text-decoration: none;
-        color: #000;
-        margin: 10px;
-        margin-top: 12px;
-        padding: 20px;
-        border: 2px solid #111;
-        border-radius: 30px;
-        width: 250px;
-        text-align: center;
-        transition: 0.3s;
-    }
-    
-    .tombolss:hover {
-        background-color: #ddd;
-    }
-    
-    .tombolss img {
-        width: 80px;
-        height: 80px;
-        margin-bottom: 10px;
-    }
-    
-    .tombolss p {
-        font-size: 16px;
-    }
-
-    .tombolsss {
-        text-decoration: none;
-        color: #000;
-        margin: 10px;
-        margin-top: 12px;
-        padding: 20px;
-        border: 2px solid #111;
-        border-radius: 30px;
-        width: 250px;
-        text-align: center;
-        transition: 0.3s;
-    }
-    
-    .tombolsss:hover {
-        background-color: #ddd;
-    }
-    
-    .tombolsss img {
-        width: 100px;
-        height: 80px;
-        margin-bottom: 10px;
-    }
-    
-    .tombolsss p {
-        font-size: 16px;
-    }
 
     .slider{
         position: relative;
@@ -930,6 +975,11 @@ img.displaySlide{
             opacity: 0.0;
             transform: translateX(100%);
         }
+    }
+
+    .footer .footer-left img {
+        width: 100%;
+        vertical-align: middle;
     }
 }
 
