@@ -25,7 +25,7 @@ function currentSlide(n) {
 
 function showSlides(n) {
     let i;
-    let slides = document.getElementsByClassName("mySlides");
+    let slides = document.getElementsByClassName("slides");
     for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
     }

@@ -164,7 +164,7 @@ header.sticky .navigation li a:hover {
     display: flex;
 }
 
-/* Slideshow container */
+/* Slideshow ZI */
 
 #slideshow{
     background: linear-gradient( #abcc92, #4d7830);
@@ -178,50 +178,16 @@ header.sticky .navigation li a:hover {
     position: relative;
   }
   
-  /* Hide the images by default */
-  .mySlides {
+  .slides {
     display: none;
     box-shadow: 2px 2px 7px 1px rgba(0, 0, 0, 0.6);
   }
   
 
-  /* Next & previous buttons */
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 55%;
-    width: auto;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
   
-  /* Position the "next button" to the right */
-  .next {
-    right: 1%;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  
-  /* Fading animation */
-  .fade {
+
+  /* Sliding animation */
+  .slide-in {
     animation-name: slide;
     animation-duration: 4.5s;
   }
@@ -235,15 +201,15 @@ header.sticky .navigation li a:hover {
         opacity: 1;
         transform: translateX(0);
     }
-}
+  }
 
-.slide-out {
+  .slide-out {
     animation-name: slide-out;
     animation-duration: 4.5s;
     animation-fill-mode: forwards;
-}
+  }
 
-@keyframes slide-out {
+  @keyframes slide-out {
     from {
         opacity: 1;
         transform: translateX(0);
@@ -252,22 +218,23 @@ header.sticky .navigation li a:hover {
         opacity: 0.0;
         transform: translateX(100%);
     }
-}
+  }
 
 
-#about{
+#jenis{
     background: #F0F3F2;
 }
- 
 
-.safe{
+ 
+/*kartu*/
+.kartu{
     position: relative;
     display: flex;
     width: 50%;
     margin: 0% 25%;
 }
 
-.titlemake{
+.title{
     position: relative;
     display: block;
     width: 50%;
@@ -276,7 +243,7 @@ header.sticky .navigation li a:hover {
     padding-top: 3%;
 }
 
-.titlemake .mksf{
+.title .ttl{
     position:relative;
     display: block;
     width: 50%;
@@ -285,16 +252,11 @@ header.sticky .navigation li a:hover {
 }
 
 .SA{
-    margin-bottom: 50px;
-}
-
-.SH{
-    margin-bottom: 50px;
-    width: 50%;
+    margin-bottom: 20%;
 }
 
 .FE{
-    margin-bottom: 50px;
+    margin-bottom: 20%;
 }
 
 
@@ -313,7 +275,7 @@ header.sticky .navigation li a:hover {
     background: #abcc92;
 }
 
-#fitur{
+#survey{
     background: #F0F3F2;
 }
 
@@ -329,13 +291,14 @@ h1 {
     padding-top: 5%;
 }
 
+
+/*tombol*/
 .links {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 20px 0;
 }
-
 
 .tombol {
     text-decoration: none;
@@ -449,6 +412,8 @@ h1 {
     background-color: #abcc92;
 }
 
+
+/*footer*/
 footer {
     bottom: 0;
 }
@@ -543,7 +508,7 @@ footer {
     width: 30%;
 }
 
-.footer .footer-about {
+.footer .footer-jenis {
     line-height: 20px;
     color: #92999f;
     font-size: 13px;
@@ -551,7 +516,7 @@ footer {
     margin: 0px;
 }
 
-.footer .footer-about span {
+.footer .footer-jenis span {
     display: block;
     color: #F0F3F2;
     font-size: 18px;
@@ -594,7 +559,7 @@ footer {
 
 
 @media screen and (max-width: 1200px) {
-    
+    /*page utama*/
     .banner {
         position: relative;
         width: 100%;
@@ -671,8 +636,8 @@ footer {
         margin: 20px 0;
     }
 
+    /*header*/
     header,
-    
     header.sticky {
         padding: 5px 10px;
         height:"70px";
@@ -726,15 +691,16 @@ footer {
         filter: invert(1);
     }
 
-    .chat{
-        position: fixed;
-        margin-top: 2100px;
-        margin-left: 70%;
-        margin-right: 50%;
+
+    /*kartu*/
+    .kartu{
+        position: relative;
         display: flex;
+        width: 70%;
+        margin: auto;
     }
 
-    .titlemake{
+    .title{
         position: relative;
         display: block;
         width: 50%;
@@ -742,13 +708,15 @@ footer {
         margin: 0% 0% 0% 25%;
     }
     
-    .titlemake .mksf{
+    .title .ttl{
         position:relative;
         display: block;
         width: 100%;
         margin: 0% 0% 0% 0%;
     }
+    
 
+    /*footer*/
     .footer .footer-left,
     .footer .footer-center,
     .footer .footer-right {
@@ -774,12 +742,10 @@ footer {
     header {
         padding-top: 40px;
     }
-
-
 }
 
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 720px) {
     .container {
         max-width: 300px;
         display: block;
@@ -791,6 +757,7 @@ footer {
         font-size: 30px;
     }
    
+    /*page utama*/
     .banner .content {
         text-align: center;
         justify-content: center;
@@ -803,7 +770,6 @@ footer {
         background-image: url(images/GS.png);
         background-size: cover;
         box-sizing: border-box;
-
     }
 
     .banner-text{
@@ -811,28 +777,33 @@ footer {
         margin-left: 15%;
         margin-right: 15%;
     }
- .banner-text ul li a img {
+
+    .banner-text ul li a img {
         width: 120px;
         height: 34px;
         border-radius: 7px;
         margin-top: 10%;
     }
+
     .banner-text p {
         margin: 0% 0%;
     }
+
     .banner-text ul {
         list-style: none;
     }
+
     .banner-text ul li {
         display: inline-block;
         margin: 0px 10px 10px 0px;
     }
+
     .banner-text ul li a {
         display: block;
     }
    
     
-
+    /*header*/
     header,
     header.sticky {
         padding: 5px 20px;
@@ -887,103 +858,16 @@ footer {
     }
 
 
-
-    header,
-    
-    header.sticky {
-        padding: 5px 10px;
-        height:"70px";
-    }
-
-    header .navigation {
-        display: none;
-    }
-
-    header .navigation.active {
-        width: 100%;
-        height: calc(100% - 60px);
-        position: fixed;
-        top: 60px;
-        left: 0%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        background: #1D96A1;
-    }
-
-    header .navigation li {
-        margin-left: 0;
-    }
-
-    header .navigation li a {
-        color: #111;
-        font-size: 1.6em;
-    }
-
-    .menuToggle {
-        position: relative;
-        width: 40px;
-        height: 40px;
-        background: url(images/menu.png);
-        background-size: 30px;
-        background-repeat: no-repeat;
-        background-position: center;
-        cursor: pointer;
-    }
-
-    .menuToggle.active {
-        background: url(images/close.png);
-        background-size: 25px;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-
-    header.sticky .menuToggle {
-        filter: invert(1);
-    }
-
-    .chat{
-        position: fixed;
-        margin-top: 1390px;
-        margin-left: 40%;
-        margin-right: 50%;
-        display: flex;
-    }
-
     .slideshow-container {
         padding-top: 120px;
         margin-left: 5%;
         margin-right: 5%;
         position: relative;
       }
-    .prev, .next {
-        cursor: pointer;
-        position: absolute;
-        top: 60%;
-        width: auto;
-        padding: 16px;
-        color: white;
-        font-weight: bold;
-        font-size: 11px;
-        transition: 0.6s ease;
-        border-radius: 0 3px 3px 0;
-        user-select: none;
-      }
 
-      .narasi{
-        position: relative;
-        display:block;
-        width: 100%;
-        text-align: center;
-        padding-top: 0%;
-        padding-left: 5%;
-        padding-right: 5%;
-        padding-bottom: 10%;
-    }
-    
 
-    .titlemake{
+    /*kartu*/
+    .title{
         position: relative;
         display: block;
         width: 100%;
@@ -991,14 +875,14 @@ footer {
         margin: 10% 0% 0% 0%;
     }
     
-    .titlemake .mksf{
+    .title .ttl{
         position:relative;
         display: block;
         width: 100%;
         margin: 0% 0% 0% 0%;
     }
 
-    .safe{
+    .kartu{
         position: relative;
         display: block;
         width: 90%;
@@ -1010,12 +894,8 @@ footer {
         width: 100%;
     }
 
-    .SH{
-        margin-bottom: 0px;
-        width: 100%;
-    }
-
-
+  
+    /*tombol*/
     .tombol {
         text-decoration: none;
         color: #000;
@@ -1124,39 +1004,6 @@ footer {
         font-size: 16px;
     }
 
-    .slider{
-        position: relative;
-        width: 100%;
-        margin: auto;
-        overflow: hidden;
-        padding: 0%;
-    }
-    .slider img{
-        width: 100%;
-        display: none;
-    }
-    img.displaySlide{
-        display: block;
-        animation-name: fade;
-        animation-duration: 1.5s;
-    }
-    .slider button{
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 0.8rem;
-        padding: 10px 15px;
-        background-color: hsla(0, 0%, 0%, 0.5);
-        color: white;
-        border: none;
-        cursor: pointer;
-    }
-    .prev{
-        left: 5%;
-    }
-    .next{
-        right: 5%;
-    }
 
     .footer .footer-left img {
         width: 100%;

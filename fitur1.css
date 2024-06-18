@@ -68,6 +68,12 @@ body {
     margin-top: 20%;
 }
 
+h1 {
+    font-size: 40px;
+    margin-bottom: 2%;
+    padding-top: 5%;
+}
+
 h1, h2, h3 {
 	font-weight: 1200;
     font-size: 3em;
@@ -95,8 +101,6 @@ h6 {
 
 
 /*header*/
-
-
 header {
     position: fixed;
     top: 0;
@@ -151,27 +155,20 @@ header.sticky .navigation li a:hover {
     color: #111;
   }
 
-.chat{
-    position: fixed;
-    margin-top: 1700px;
-    margin-left: 80%;
-    margin-right: 50%;
-    display: flex;
-}
 
 #about{
     background: #F0F3F2;
 }
  
 
-.safe{
+/*kartu*/
+.kartu{
     position: relative;
     display: flexbox;
     margin: 0% 25%;
 }
 
-
-.titlemake{
+.title{
     position: relative;
     display: block;
     text-align: center;
@@ -179,7 +176,7 @@ header.sticky .navigation li a:hover {
     padding-top: 3%;
 }
 
-.titlemake .mksf{
+.title .ttl{
     position:relative;
     display: block;
     width: 50%;
@@ -201,18 +198,7 @@ header.sticky .navigation li a:hover {
 }
 
 
-.narasi{
-    position: relative;
-    display:block;
-    width: 100%;
-    text-align: center;
-    padding-top: 0%;
-    padding-left: 20%;
-    padding-right: 20%;
-    padding-bottom: 10%;
-}
-
-#inovasi{
+#pencapaian{
     background: #abcc92;
 }
 
@@ -220,25 +206,14 @@ header.sticky .navigation li a:hover {
     background: #F0F3F2;
 }
 
-.container {
-    max-width: 1600px;
-    margin: 0 auto;
-    text-align: center;
-}
 
-h1 {
-    font-size: 40px;
-    margin-bottom: 2%;
-    padding-top: 5%;
-}
-
+/*tombol*/
 .links {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 20px 0;
 }
-
 
 .tombol {
     text-decoration: none;
@@ -301,6 +276,14 @@ h1 {
     background-color: #F0F3F2;
 }
 
+
+/*slideshow*/
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
 .slider{
     position: relative;
     width: 100%;
@@ -319,7 +302,6 @@ img.displaySlide{
     animation-duration: 10s;
 }
 
-
 .slider button{
     position: absolute;
     top: 50%;
@@ -330,12 +312,6 @@ img.displaySlide{
     color: white;
     border: none;
     cursor: pointer;
-}
-.prev{
-    left: 27.5%;
-}
-.next{
-    right: 28%;
 }
 
 @keyframes fade {
@@ -376,6 +352,8 @@ img.displaySlide{
     }
 }
 
+
+/*footer*/
 footer {
     bottom: 0;
 }
@@ -581,6 +559,7 @@ footer {
         font-size: 1.4em;
     }
     
+
     .links {
         display: flex;
         flex-wrap: wrap;
@@ -588,8 +567,8 @@ footer {
         margin: 20px 0;
     }
 
+
     header,
-    
     header.sticky {
         padding: 5px 10px;
         height:"70px";
@@ -643,15 +622,9 @@ footer {
         filter: invert(1);
     }
 
-    .chat{
-        position: fixed;
-        margin-top: 2100px;
-        margin-left: 70%;
-        margin-right: 50%;
-        display: flex;
-    }
 
-    .titlemake{
+    /*title*/
+    .title{
         position: relative;
         display: block;
         width: 50%;
@@ -659,13 +632,15 @@ footer {
         margin: 0% 0% 0% 25%;
     }
     
-    .titlemake .mksf{
+    .title .ttl{
         position:relative;
         display: block;
         width: 100%;
         margin: 0% 0% 0% 0%;
     }
 
+
+    /*footer*/
     .footer .footer-left,
     .footer .footer-center,
     .footer .footer-right {
@@ -717,7 +692,7 @@ footer {
         margin-left: 15%;
         margin-right: 15%;
     }
- .banner-text ul li a img {
+    .banner-text ul li a img {
         width: 120px;
         height: 34px;
         border-radius: 7px;
@@ -737,10 +712,8 @@ footer {
         display: block;
     }
    
-    
 
     header,
-    
     header.sticky {
         padding: 5px 10px;
         height:"70px";
@@ -794,42 +767,9 @@ footer {
         filter: invert(1);
     }
     
-    .chat{
-        position: fixed;
-        margin-top: 1390px;
-        margin-left: 40%;
-        margin-right: 50%;
-        display: flex;
-    }
 
-
-    .prev, .next {
-        cursor: pointer;
-        position: absolute;
-        top: 60%;
-        width: auto;
-        padding: 16px;
-        color: white;
-        font-weight: bold;
-        font-size: 11px;
-        transition: 0.6s ease;
-        border-radius: 0 3px 3px 0;
-        user-select: none;
-      }
-
-      .narasi{
-        position: relative;
-        display:block;
-        width: 100%;
-        text-align: center;
-        padding-top: 0%;
-        padding-left: 5%;
-        padding-right: 5%;
-        padding-bottom: 10%;
-    }
-    
-
-    .titlemake{
+    /*kartu*/
+    .title{
         position: relative;
         display: block;
         width: 90%;
@@ -837,14 +777,14 @@ footer {
         margin: auto;
     }
     
-    .titlemake .mksf{
+    .title .ttl{
         position:relative;
         display: block;
         width: 100%;
         margin: 0% 0% 0% 0%;
     }
 
-    .safe{
+    .kartu{
         position: relative;
         display: block;
         width: 90%;
@@ -862,6 +802,7 @@ footer {
     }
 
 
+    /*tombol*/
     .tombol {
         text-decoration: none;
         color: #000;
@@ -916,6 +857,7 @@ footer {
     }
     
 
+    /*slideshow*/
     .slider{
         position: relative;
         width: 100%;
